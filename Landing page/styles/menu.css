@@ -1,0 +1,91 @@
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#dishes {
+    width: 100%;
+    display: flex;
+    gap: 21px;
+    margin-top: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dish {
+    position: relative;
+    display: flex;
+    background-color: var( --color-neutral-0);
+    
+    border-radius: 20px;
+    box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.25);
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.dish-heart {
+    background-color: var( --color-primary-6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: var( --color-neutral-0);
+    border-radius:  0 37.5px 0 42.5px;
+    position: absolute;
+    font-size: 1.563rem;
+    width: 70px;
+    height: 70px;
+    top: -10px;
+    right: -10px;
+}
+
+.dish-image{
+    width: 210px;
+}
+
+.dish-description {
+    text-align: center;
+    font-weight: 300;
+    color: #434343;
+}
+
+.dish-rate i {
+    color: var( --color-primary-6);
+}
+
+.dish-price {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+@media screen and (max-width:1170px) {
+    #dishes {
+        
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dish {
+        width:  calc(50% - 12px);
+    
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .dish {
+        width: 100%;
+        gap: 10px;
+    }
+}
+
+ 
